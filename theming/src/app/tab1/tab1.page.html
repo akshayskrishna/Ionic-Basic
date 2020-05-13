@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Disease
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Diseases</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list-header>
+    <ion-label>Things reeking havoc NOW!</ion-label>
+  </ion-list-header>
+
+  <ion-card >
+    <img src="https://www.fi.edu/sites/default/files/images/blog/1580941598923.jpeg" />
+    <ion-card-header>
+      <ion-card-subtitle>Corona Virus</ion-card-subtitle>
+      <ion-card-title>COVID-19</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      The 2019–20 coronavirus pandemic is an ongoing pandemic of coronavirus disease 2019 (COVID-19), caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://images.foxtv.com/static.fox29.com/www.fox29.com/content/uploads/2020/03/764/432/GETTY-hantavirus.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Orthohantavirus</ion-card-subtitle>
+      <ion-card-title>Hanta Virus</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      They normally cause infection in rodents, but do not cause disease in them. Humans may become infected with hantaviruses through contact with rodent urine, saliva, or feces.
+    </ion-card-content>
+  </ion-card>
+
+  <a routerLink="/helloworld"><ion-button>Using RouterLink</ion-button></a>
+  <ion-button (click)="jump()">Using URL</ion-button>
+  
+</ion-content>

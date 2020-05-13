@@ -1,0 +1,79 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    
+    <ion-toolbar>
+      <ion-title size="large">About</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list-header>
+    <ion-label>Slides presentation</ion-label>
+    
+  </ion-list-header>
+  <div> 
+    <p>Each image on slides have action sheet on them.</p>
+  </div>
+  
+  <ion-slides pager="true" #mySlider>
+    <ion-slide>
+      <ion-card (click)="presentActionSheet()" >
+        <img src="https://scopeblog.stanford.edu/wp-content/uploads/2020/03/Coronvirus2-CDC-.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle>Virus</ion-card-subtitle>
+          <ion-card-title>COVID-19</ion-card-title>
+          <ion-card-content>
+            Some illustration of COVID-19.
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card (click)="presentActionSheet()">
+        <img src="https://images.idgesg.net/images/article/2019/07/cso_security_threat_virus_malicious_binary_code_bluebay2014_gettyimages-983223752_2400x1600-100801546-large.jpg" /> 
+        <ion-card-header>
+          <ion-card-subtitle>Virus</ion-card-subtitle>
+          <ion-card-title>Trojan Horse</ion-card-title>
+          <ion-card-content>
+            Visual illustration of computer Virus.
+          </ion-card-content>
+        </ion-card-header>   
+      </ion-card>
+    </ion-slide>
+    
+    
+
+    <ion-slide>
+      <ion-card (click)="presentActionSheet()">
+        <img src="https://geekymint.com/wp-content/uploads/2020/03/trojan-virus.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle>Attack</ion-card-subtitle>
+          <ion-card-title>DDOS Attack</ion-card-title>
+          <ion-card-content>
+            Random visual illustration of DDOS attack.
+          </ion-card-content>
+        </ion-card-header>   
+      </ion-card>
+    </ion-slide>
+
+   
+  </ion-slides>
+ 
+  
+  <ion-content fullscreen class="ion-padding">
+    <ion-button (click)="swipePrev()">Prev</ion-button>
+    <ion-button (click)="swipeNext()">Next</ion-button>
+
+    <ion-button (click)="presentActionSheet()">Demo Action Sheet</ion-button>
+  
+
+  </ion-content>
+</ion-content>
